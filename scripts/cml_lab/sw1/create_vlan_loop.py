@@ -14,7 +14,6 @@ sw1 = {
 }
 
 net_connect = ConnectHandler(**sw1)
-
 net_connect.enable()
 
 net_connect.send_command('conf t', expect_string=r'[\#>]', read_timeout=60)

@@ -15,7 +15,6 @@ r1 = {
 }
 
 net_connect = ConnectHandler(**r1)
-
 net_connect.enable()
 
 commands = [
