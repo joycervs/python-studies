@@ -1,10 +1,14 @@
 # Basic commands on a Router
 from netmiko import ConnectHandler
 import getpass
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 r1 = {
     'device_type': 'cisco_ios',
-    'host': '10.10.20.171', 
+    'host': os.getenv('R1_HOST'), 
     'username': input('Enter your username: '),
     'password': getpass.getpass('Enter your password: ') 
 }

@@ -1,10 +1,14 @@
 # Creating VLANs on a Switch with for loop
 from netmiko import ConnectHandler
 import getpass
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 sw1 = {
     'device_type': 'cisco_ios',
-    'host': '10.10.20.173',
+    'host': os.getenv('SW1_HOST'),
     'username': input('Enter your username: '),
     'password': getpass.getpass('Enter your password: ')
 }
