@@ -4,6 +4,8 @@ import getpass
 from dotenv import load_dotenv
 import os
 
+load_dotenv()
+
 r1 = {
     'device_type': 'cisco_ios',
     'host': os.getenv('R1_HOST'),
