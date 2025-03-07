@@ -1,0 +1,6 @@
+clock timezone EST -4
+
+logging console 7
+
+username joyce privilege 15 password cisco
+username joy privilege 15 password cisco
